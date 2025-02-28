@@ -1,0 +1,41 @@
+.event-form{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: left;
+    justify-content: left;
+    background-color: #fff;
+
+    border-radius: 25px;
+    gap: 20px;
+
+    width:40%;
+    margin-top: 20px;
+    padding: 20px;
+  
+    border: 2px solid #043a28;
+}
+
+.new-event-title{
+    font-size: large;
+    text-align: left;
+    height: 30px;
+}
+
+.event-date{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.event-time{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.event-location{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
