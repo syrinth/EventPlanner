@@ -93,10 +93,13 @@ const Login = () => {
                         <div>
                             <input className="input" type="password" value={password} placeholder="password" onChange={handlePassword}/>
                         </div>
-
                         <button className="login-box-button" type="submit" onClick={handleSubmit}>Submit</button>
                     </form>
                 </div>
+                <span>
+                    New user? 
+                    <a href='/register'>Register here</a>
+                </span>
 
                 {/* Error Box Display*/}
                 {error ? 
