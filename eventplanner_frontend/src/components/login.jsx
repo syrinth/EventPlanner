@@ -91,7 +91,7 @@ const Login = () => {
                             <input className="input" type="email" value={email} placeholder="E-mail" onChange={handleEmail}/>
                         </div>
                         <div>
-                            <input className="input" type="password" value={password} placeholder="password" onChange={handlePassword}/>
+                            <input className="input" type="password" value={password} placeholder="Password" onChange={handlePassword}/>
                         </div>
                         <button className="login-box-button" type="submit" onClick={handleSubmit}>Submit</button>
                     </form>

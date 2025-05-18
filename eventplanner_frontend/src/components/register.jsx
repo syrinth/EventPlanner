@@ -2,9 +2,13 @@ import React from "react";
 import Header from './header';
 import axiosInstance from '../axios';
 import './login.css'
+
 import { useState } from "react";
+import { useNavigate  } from 'react-router-dom';
 
 const Register = () => {
+  const navigate = useNavigate ();
+
   // States for registration
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -46,6 +50,7 @@ const Register = () => {
         .then(response => {
           const data = response.data;
           console.log(data);
+          navigate('/');
         })
         .catch(err => {
             if(err.response.data.email){
@@ -101,7 +106,7 @@ const Register = () => {
                             <input className="input" type="email" value={email} placeholder="E-mail" onChange={handleEmail}/>
                         </div>
                         <div>
-                            <input className="input" type="password" value={password} placeholder="password" onChange={handlePassword}/>
+                            <input className="input" type="password" value={password} placeholder="Password" onChange={handlePassword}/>
                         </div>
 
                         <button className="login-box-button" type="submit" onClick={handleSubmit}>Submit</button>
